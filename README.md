@@ -98,7 +98,7 @@ $ python tools/infer.py --cfg configs/ade20k.yaml
 
 Example test results (SegFormer-B2):
 
-![test_result](./output/test_results/img_1979_overlay.png)
+![test_result](./output/elbit_results/results_test_segformer.mp4)
 
 </details>
 
