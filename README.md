@@ -2,23 +2,41 @@
 
 <details open>
 This project contains a trained model that is able to receive an off-road image and perform semantic segmentation of the image pixels and output a segmented image.
+ 
 the classes are:
+
  0 = Terrain
+ 
  1 = Unpaved Route
+ 
  2 = Paved Road
+ 
  3 = Tree Trunk
+ 
  4 = Tree Foliage
+ 
  5 = Rocks
+ 
  6 = Large Shrubs
+ 
  7 = Low Vegetation
+ 
  8 = Wire Fence
+ 
  9 = Sky
+ 
  10 = Person
+ 
  11 = Vehicle
+ 
  12 = Building
+ 
  13 = ignore
+ 
  14 = Misc
+ 
  15 = Water
+ 
  16 = Animal
  
 ## <div align="center">Usage</div>
