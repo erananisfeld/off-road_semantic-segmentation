@@ -39,7 +39,7 @@ the classes are:
  
  16 = Animal
 
- Trained Model is in \output\elbit_results\SegFormer_MiT-B3_Elbit.pth 
+ Link for Trained weights: https://drive.google.com/file/d/1EQ6Cj09gtuIOgxUGqiDBZGuWVS9NhXGa/view?usp=sharing 
  
 ## <div align="center">Usage</div>
 
