@@ -1,144 +1,26 @@
-# <div align="center">Semantic Segmentation</div>
+## <div align="center">Description</div>
 
-<div align="center">
-<p>Easy to use and customizable SOTA Semantic Segmentation models with abundant datasets in PyTorch</p>
-
-<a href="https://colab.research.google.com/github/sithu31296/semantic-segmentation/blob/main/notebooks/tutorial.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
-</div>
-
-![banner](assests/banner.jpg)
-
-## <div align="center">Major Rework! Stay tuned...</div>
-
-<p>A lot has been changed since 2022, nowadays there are even open-world segmentation models (Segment Anything). However, traditional segmentation models are still in demand for high accuracy and custom use cases. This repo will be updated according to new PyTorch version, updated models, and documentations for how to use with a custom dataset, etc.</p>
-<p>Expected release date -> May 2024</p>
-
-Planned features:
-* Rework on whole training pipeline
-* Baseline pre-trained model
-* New updated ideas
-* Easy integration with SOTA backbone models (with tutorials)
-* Tutorial for custom dataset
-* Distributed training
-
-Current features to be discarded:
-* Amount of datasets provided will be reduced. But instead, representative ones will be remained with a tutorial for custom dataset.
-* Amount of models provided will be reducted. Instead, valuable tricks and modules will be remained, and can be easily integrated with any models.
-* Augmentations will be replaced with official torchvisionv2 transforms.
-* Conversion and inference with other frameworks
-
-</div>
-
-## <div align="center">Features</div>
-
-* Applicable to following tasks:
-  * Scene Parsing
-  * Human Parsing
-  * Face Parsing
-  * Medical Image Segmentation (Coming Soon)
-* 20+ Datasets
-* 15+ SOTA Backbones
-* 10+ SOTA Semantic Segmentation Models
-* PyTorch, ONNX, TFLite, OpenVINO Export & Inference 
-
-</div>
-
-
-## <div align="center">Model Zoo</div>
-
-Supported Backbones:
-* [ResNet](https://arxiv.org/abs/1512.03385) (CVPR 2016)
-* [ResNetD](https://arxiv.org/abs/1812.01187) (ArXiv 2018)
-* [MobileNetV2](https://arxiv.org/abs/1801.04381) (CVPR 2018)
-* [MobileNetV3](https://arxiv.org/abs/1905.02244) (ICCV 2019)
-* [MiT](https://arxiv.org/abs/2105.15203v2) (NeurIPS 2021)
-* [ResT](https://arxiv.org/abs/2105.13677v3) (NeurIPS 2021)
-* [MicroNet](https://arxiv.org/abs/2108.05894) (ICCV 2021)
-* [ResNet+](https://arxiv.org/abs/2110.00476) (ArXiv 2021)
-* [PVTv2](https://arxiv.org/abs/2106.13797) (CVMJ 2022)
-* [PoolFormer](https://arxiv.org/abs/2111.11418) (CVPR 2022)
-* [ConvNeXt](https://arxiv.org/abs/2201.03545) (CVPR 2022)
-* [UniFormer](https://arxiv.org/abs/2201.09450) (ArXiv 2022)
-* [VAN](https://arxiv.org/abs/2202.09741) (ArXiv 2022)
-* [DaViT](https://arxiv.org/abs/2204.03645) (ArXiv 2022)
-
-Supported Heads/Methods:
-* [FCN](https://arxiv.org/abs/1411.4038) (CVPR 2015)
-* [UPerNet](https://arxiv.org/abs/1807.10221) (ECCV 2018)
-* [BiSeNetv1](https://arxiv.org/abs/1808.00897) (ECCV 2018)
-* [FPN](https://arxiv.org/abs/1901.02446) (CVPR 2019)
-* [SFNet](https://arxiv.org/abs/2002.10120) (ECCV 2020)
-* [SegFormer](https://arxiv.org/abs/2105.15203v2) (NeurIPS 2021)
-* [FaPN](https://arxiv.org/abs/2108.07058) (ICCV 2021)
-* [CondNet](https://arxiv.org/abs/2109.10322) (IEEE SPL 2021)
-* [Light-Ham](https://openreview.net/forum?id=1FvkSpWosOl) (ICLR 2021)
-* [Lawin](https://arxiv.org/abs/2201.01615) (ArXiv 2022)
-* [TopFormer](https://arxiv.org/abs/2204.05525) (CVPR 2022)
-
-Supported Standalone Models:
-* [BiSeNetv2](https://arxiv.org/abs/2004.02147v1) (IJCV 2021)
-* [DDRNet](https://arxiv.org/abs/2101.06085) (ArXiv 2021)
-
-Supported Modules:
-* [PPM](https://arxiv.org/abs/1612.01105) (CVPR 2017)
-* [PSA](https://arxiv.org/abs/2107.00782) (ArXiv 2021)
-
-Refer to [MODELS](./docs/MODELS.md) for benchmarks and available pre-trained models.
-
-And check [BACKBONES](./docs/BACKBONES.md) for supported backbones.
-
-> Notes: Most of the methods do not have pre-trained models. It's very difficult to combine different models with pre-trained weights in one repository and limited resource to re-train myself.
-
-## <div align="center">Supported Datasets</div>
-
-Scene Parsing:
-* [ADE20K](http://sceneparsing.csail.mit.edu/)
-* [CityScapes](https://www.cityscapes-dataset.com/)
-* [COCO-Stuff](https://github.com/nightrome/cocostuff)
-* [CamVid](http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/)
-* [PASCAL-Context](https://cs.stanford.edu/~roozbeh/pascal-context/)
-* [Mapillary Vistas](https://www.mapillary.com/dataset/vistas)
-* [Sun RGB-D](https://rgbd.cs.princeton.edu/)
-
-Human Parsing:
-* [MHPv2](https://lv-mhp.github.io/)
-* [MHPv1](https://lv-mhp.github.io/)
-* [LIP](http://sysu-hcp.net/lip/index.php)
-* [CCIHP](https://kalisteo.cea.fr/wp-content/uploads/2021/09/README.html)
-* [CIHP](http://sysu-hcp.net/lip/index.php)
-* [ATR](https://github.com/lemondan/HumanParsing-Dataset)
-
-Face Parsing:
-* [HELEN](https://www.sifeiliu.net/face-parsing)
-* [LaPa](https://github.com/JDAI-CV/lapa-dataset)
-* [iBugMask](https://github.com/hhj1897/face_parsing)
-* [CelebAMaskHQ](https://github.com/switchablenorms/CelebAMask-HQ)
-* [FaceSynthetics](https://github.com/microsoft/FaceSynthetics)
-
-Others:
-* [SUIM](http://irvlab.cs.umn.edu/resources/suim-dataset)
-
-Refer to [DATASETS](./docs/DATASETS.md) for more details and dataset preparation.
-
-<details>
-  <summary><strong>Available Augmentations</strong> (click to expand)</summary>
-
-Check the notebook [here](./notebooks/aug_test.ipynb) to test the augmentation effects.
-
-Pixel-level Transforms:
-* ColorJitter (Brightness, Contrast, Saturation, Hue)
-* Gamma, Sharpness, AutoContrast, Equalize, Posterize
-* GaussianBlur, Grayscale
-
-Spatial-level Transforms:
-* Affine, RandomRotation
-* HorizontalFlip, VerticalFlip
-* CenterCrop, RandomCrop
-* Pad, ResizePad, Resize
-* RandomResizedCrop
-
-</details>
-
+<details open>
+This project contains a trained model that is able to receive an off-road image and perform semantic segmentation of the image pixels and output a segmented image.
+the classes are:
+ 0 = Terrain
+ 1 = Unpaved Route
+ 2 = Paved Road
+ 3 = Tree Trunk
+ 4 = Tree Foliage
+ 5 = Rocks
+ 6 = Large Shrubs
+ 7 = Low Vegetation
+ 8 = Wire Fence
+ 9 = Sky
+ 10 = Person
+ 11 = Vehicle
+ 12 = Building
+ 13 = ignore
+ 14 = Misc
+ 15 = Water
+ 16 = Animal
+ 
 ## <div align="center">Usage</div>
 
 <details open>
@@ -151,8 +33,8 @@ Spatial-level Transforms:
 Then, clone the repo and install the project with:
 
 ```bash
-$ git clone https://github.com/sithu31296/semantic-segmentation
-$ cd semantic-segmentation
+$ git clone https://github.com/erananisfeld/semantic-segmentation_off-road
+$ cd semantic-segmentation_off-road
 $ pip install -e .
 ```
 
@@ -216,37 +98,19 @@ $ python tools/infer.py --cfg configs/ade20k.yaml
 
 Example test results (SegFormer-B2):
 
-![test_result](./assests/infer_result.png)
+![test_result](./output/test_results/img_1979_overlay.png)
 
 </details>
 
-<br>
-<details>
-  <summary><strong>Convert to other Frameworks</strong> (ONNX, CoreML, OpenVINO, TFLite)</summary>
-
-To convert to ONNX and CoreML, run:
-
-```bash
-$ python tools/export.py --cfg configs/<CONFIG_FILE_NAME>.yaml
-```
-
-To convert to OpenVINO and TFLite, see [torch_optimize](https://github.com/sithu31296/torch_optimize).
-
-</details>
 
 <br>
 <details>
-  <summary><strong>Inference</strong> (ONNX, OpenVINO, TFLite)</summary>
+  <summary><strong>Inference</strong> </summary>
 
 ```bash
-## ONNX Inference
-$ python scripts/onnx_infer.py --model <ONNX_MODEL_PATH> --img-path <TEST_IMAGE_PATH>
+## Inference
+$ python tools/infer.py --model <MODEL_PATH> --img-path <TEST_IMAGE_PATH>
 
-## OpenVINO Inference
-$ python scripts/openvino_infer.py --model <OpenVINO_MODEL_PATH> --img-path <TEST_IMAGE_PATH>
-
-## TFLite Inference
-$ python scripts/tflite_infer.py --model <TFLite_MODEL_PATH> --img-path <TEST_IMAGE_PATH>
 ```
 
 </details>
@@ -255,9 +119,7 @@ $ python scripts/tflite_infer.py --model <TFLite_MODEL_PATH> --img-path <TEST_IM
 <details>
   <summary><strong>References</strong> (click to expand)</summary>
 
-* https://github.com/CoinCheung/BiSeNet
-* https://github.com/open-mmlab/mmsegmentation
-* https://github.com/rwightman/pytorch-image-models
+* https://github.com/sithu31296/semantic-segmentation.git
 
 </details>
 
