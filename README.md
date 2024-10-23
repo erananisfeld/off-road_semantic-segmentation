@@ -38,6 +38,8 @@ the classes are:
  15 = Water
  
  16 = Animal
+
+ Trained Model is in \output\elbit_results\SegFormer_MiT-B3_Elbit.pth 
  
 ## <div align="center">Usage</div>
 
