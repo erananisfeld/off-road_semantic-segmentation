@@ -98,7 +98,7 @@ $ python tools/infer.py --cfg configs/ade20k.yaml
 
 Example test results (SegFormer-B2):
 
-![test_result](./output/elbit_results/test_results/Arbel_2017-11-07_07-11-2017_135645_Day_784_overlay)
+![test_result](./output/elbit_results/test_results/Arbel_2017-11-07_07-11-2017_135645_Day_784_overlay.png)
 
 </details>
 
